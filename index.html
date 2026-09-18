@@ -1,3 +1,91 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Math 131</title>
-<style>body{font-family:Georgia,serif;max-width:40rem;margin:4rem auto;padding:0 1.5rem;line-height:1.6;color:#17202A}a{color:#1A56A6}</style></head>
-<body><h1>Math 131 discussion section</h1><h2>Worksheet solutions</h2><ul><li><a href="worksheet_solution/week2/">Week 2 — secants, tangents, and limits that blow up</a></li></ul></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Math 131 Discussion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF; --panel:#F2F4F6; --ink:#17202A; --ink-2:#52606D; --ink-3:#8A949E;
+  --rule:#D9DEE3; --blue:#1A56A6; --blue-soft:rgba(26,86,166,.12);
+  --head:#163E78; --hero:#EEF4FC; --hero-line:rgba(26,86,166,.13);
+  --green:#25784A; --green-soft:rgba(37,120,74,.12);
+  --lbl:9.5rem;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#121518; --panel:#1B2025; --ink:#E8ECEF; --ink-2:#B3BCC5; --ink-3:#7C8791;
+    --rule:#2C343C; --blue:#7FA9EE; --blue-soft:rgba(127,169,238,.16);
+    --head:#A9C4F2; --hero:#161D27; --hero-line:rgba(127,169,238,.14);
+    --green:#72CB98; --green-soft:rgba(114,203,152,.16);
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6;padding-block:0 72px}
+h1,h2{margin:0;font-weight:600;line-height:1.2;text-wrap:balance}
+h1{font-size:2.2rem}
+h2{font-size:1.5rem;color:var(--head)}
+a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.sans{font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif}
+.wrap{max-width:calc(82ch + var(--lbl) + 40px);margin:0 auto;padding-left:calc(var(--lbl) + 20px);padding-right:20px;overflow-x:clip}
+header.top{position:relative;margin:0 -20px 0 calc(-1 * var(--lbl) - 20px);padding:46px 20px 26px calc(var(--lbl) + 20px);background-color:var(--hero);background-image:linear-gradient(var(--hero-line) 1px,transparent 1px),linear-gradient(90deg,var(--hero-line) 1px,transparent 1px);background-size:24px 24px;border-bottom:2px solid var(--blue)}
+.kicker{font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;font-size:.9rem;font-weight:600;color:var(--blue);margin:0 0 8px}
+.lede{font-size:1.05rem;color:var(--ink-2);margin:10px 0 0}
+section{position:relative;padding-block:36px 12px;border-bottom:1px solid var(--rule)}
+.lbl{position:absolute;left:calc(-1 * var(--lbl));top:36px;width:calc(var(--lbl) - 1.4rem);text-align:right;font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;font-size:.82rem;font-weight:600;line-height:1.35;color:var(--blue);padding-top:.2em}
+p{margin:.65em 0}
+.weeks{list-style:none;padding:0;margin:14px 0 0;border-top:1.5px solid var(--ink)}
+.weeks li{display:grid;grid-template-columns:5.5rem 1fr auto;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule)}
+.weeks .wk{font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;font-weight:600;color:var(--head)}
+.weeks .topic{font-weight:600}
+.weeks .sec{display:block;font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;font-size:.88rem;color:var(--ink-2);font-weight:400}
+.weeks .link{font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;font-size:.9rem;font-weight:600;white-space:nowrap}
+.weeks .link a{display:inline-block;border:1.5px solid var(--green);background:var(--green-soft);color:var(--ink);border-radius:3px;padding:1px 9px;text-decoration:none}
+.weeks .link a:hover{background:var(--green);color:var(--paper)}
+.weeks .soon{color:var(--ink-3);font-weight:400}
+.foot{margin-top:36px;color:var(--ink-3);font-size:.88rem;font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif}
+@media (max-width:760px){
+  :root{--lbl:0rem}
+  .lbl{position:static;width:auto;text-align:left;padding:0 0 4px;display:block}
+  .weeks li{grid-template-columns:4.5rem 1fr}
+  .weeks .link{grid-column:2}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <p class="kicker">Math 131H discussion section, Fall 2026</p>
+  <h1>Worksheet solutions</h1>
+  <p class="lede">Worked, interactive solutions to each week's discussion worksheet. A week's page appears after we have gone through the worksheet in section.</p>
+</header>
+
+<section>
+<div class="lbl">Weeks</div>
+<h2>Discussion worksheets</h2>
+<ol class="weeks">
+<li><span class="wk">Week 1</span><span class="topic">Review of slope</span><span class="link soon">not posted</span></li>
+<li><span class="wk">Week 2</span><span class="topic">Secants, tangents, and limits that blow up<span class="sec">Sections 2.1 and 2.2 — the tangent and velocity problems; the limit of a function</span></span><span class="link"><a href="worksheet_solution/week2/">Solutions</a></span></li>
+<li><span class="wk">Week 3</span><span class="topic">Computing limits<span class="sec">Sections 2.3 and 2.4 — limit laws; the precise definition of a limit</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 4</span><span class="topic">Continuity and limits at infinity<span class="sec">Sections 2.5 and 2.6</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 5</span><span class="topic">The derivative<span class="sec">Sections 2.7 and 2.8 — derivatives and rates of change; the derivative as a function</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 6</span><span class="topic">Differentiation rules<span class="sec">Sections 3.1 and 3.2 — polynomials and exponentials; product and quotient rules</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 7</span><span class="topic">Trig derivatives and the chain rule<span class="sec">Sections 3.3 and 3.4</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 8</span><span class="topic">Implicit differentiation and logarithms<span class="sec">Sections 3.5 and 3.6</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 9</span><span class="topic">Rates of change and exponential growth<span class="sec">Sections 3.7 and 3.8</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 10</span><span class="topic">Related rates and linear approximation<span class="sec">Sections 3.9 and 3.10</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 11</span><span class="topic">Extreme values and the Mean Value Theorem<span class="sec">Sections 4.1 and 4.2</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 12</span><span class="topic">What derivatives say about the shape of a graph<span class="sec">Section 4.3</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 13</span><span class="topic">L'Hospital's rule and optimization<span class="sec">Sections 4.4 and 4.7</span></span><span class="link soon">coming</span></li>
+<li><span class="wk">Week 14</span><span class="topic">Antiderivatives and areas<span class="sec">Sections 4.9 and 5.1</span></span><span class="link soon">coming</span></li>
+</ol>
+</section>
+
+<p class="foot">Math 131H discussion section.</p>
+</div>
+</body>
+</html>
