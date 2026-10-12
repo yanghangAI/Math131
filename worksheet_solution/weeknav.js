@@ -5,7 +5,8 @@
     {n:2,title:'Secants, tangents, and limits that blow up'},
     {n:3,title:'Computing limits, squeezing them, and pinning them down'},
     {n:4,title:'Continuity, and limits far away'},
-    {n:5,title:'The derivative, from the limit definition'}
+    {n:5,title:'The derivative, from the limit definition'},
+    {n:6,title:'Derivative shortcuts: power, product and quotient rules'}
   ];
   const m=location.pathname.match(/week(\d+)\/?(index\.html)?$/);
   const cur=m?+m[1]:null, i=WEEKS.findIndex(w=>w.n===cur);
