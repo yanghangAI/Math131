@@ -47,6 +47,11 @@ p{margin:.65em 0}
 .weeks .link a{display:inline-block;border:1.5px solid var(--green);background:var(--green-soft);color:var(--ink);border-radius:3px;padding:1px 9px;text-decoration:none}
 .weeks .link a:hover{background:var(--green);color:var(--paper)}
 .weeks .soon{color:var(--ink-3);font-weight:400}
+.weeks li.has-sub{border-bottom:0;padding-bottom:4px}
+.weeks li.sub{padding:3px 0;border-bottom:0}
+.weeks li.sub.last{border-bottom:1px solid var(--rule);padding-bottom:10px}
+.weeks li.sub .topic{font-weight:400}
+.weeks li.sub .topic::before{content:"↳ ";color:var(--ink-3)}
 .foot{margin-top:36px;color:var(--ink-3);font-size:.88rem;font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif}
 @media (max-width:760px){
   :root{--lbl:0rem}
@@ -61,7 +66,7 @@ p{margin:.65em 0}
 <header class="top">
   <p class="kicker">Math 131H discussion section, Fall 2026</p>
   <h1>Worksheet solutions</h1>
-  <p class="lede">Worked, interactive solutions to each week's discussion worksheet, plus the midterm practice tests. A week's page appears after we have gone through the worksheet in section.</p>
+  <p class="lede">Worked, interactive solutions to each week's discussion worksheet, plus the midterm practice tests (listed under the week they were handed out). A week's page appears after we have gone through the worksheet in section.</p>
 </header>
 
 <section>
@@ -73,7 +78,9 @@ p{margin:.65em 0}
 <li><span class="wk">Week 3</span><span class="topic">Computing limits, squeezing them, and pinning them down<span class="sec">Sections 2.3 and 2.4 — limit laws; the Squeeze Theorem; the precise definition of a limit</span></span><span class="link"><a href="week3/">Solutions</a></span></li>
 <li><span class="wk">Week 4</span><span class="topic">Continuity, and limits far away<span class="sec">Sections 2.5 and 2.6 — continuity; the Intermediate Value Theorem; limits at infinity</span></span><span class="link"><a href="week4/">Solutions</a></span></li>
 <li><span class="wk">Week 5</span><span class="topic">The derivative, from the limit definition<span class="sec">Sections 2.7 and 2.8 — derivatives and rates of change; the derivative as a function</span></span><span class="link"><a href="week5/">Solutions</a></span></li>
-<li><span class="wk">Week 6</span><span class="topic">Differentiation rules<span class="sec">Sections 3.1 and 3.2 — polynomials and exponentials; product and quotient rules</span></span><span class="link"><a href="week6/">Solutions</a></span></li>
+<li class="has-sub" id="week6"><span class="wk">Week 6</span><span class="topic">Differentiation rules<span class="sec">Sections 3.1 and 3.2 — polynomials and exponentials; product and quotient rules</span></span><span class="link"><a href="week6/">Solutions</a></span></li>
+<li class="sub"><span class="wk"></span><span class="topic">Midterm 1 Practice Test 1<span class="sec">9 questions — limits, continuity, Squeeze Theorem, vertical and horizontal asymptotes, IVT, derivative from the definition</span></span><span class="link"><a href="../midterm_solution/practice1/">Solutions</a></span></li>
+<li class="sub last"><span class="wk"></span><span class="topic">Midterm 1 Practice Test 2<span class="sec">7 questions — limits, continuity, Squeeze Theorem, limits at infinity, IVT, second derivative from the definition, tangent line</span></span><span class="link"><a href="../midterm_solution/practice2/">Solutions</a></span></li>
 <li><span class="wk">Week 7</span><span class="topic">Trig derivatives and the chain rule<span class="sec">Sections 3.3 and 3.4</span></span><span class="link soon">coming</span></li>
 <li><span class="wk">Week 8</span><span class="topic">Implicit differentiation and logarithms<span class="sec">Sections 3.5 and 3.6</span></span><span class="link soon">coming</span></li>
 <li><span class="wk">Week 9</span><span class="topic">Rates of change and exponential growth<span class="sec">Sections 3.7 and 3.8</span></span><span class="link soon">coming</span></li>
@@ -85,14 +92,6 @@ p{margin:.65em 0}
 </ol>
 </section>
 
-<section id="midterm1">
-<div class="lbl">Midterm 1</div>
-<h2>Midterm 1 practice tests</h2>
-<ol class="weeks">
-<li><span class="wk">Test 1</span><span class="topic">Practice Test 1<span class="sec">9 questions — limits, continuity, Squeeze Theorem, vertical and horizontal asymptotes, IVT, derivative from the definition</span></span><span class="link"><a href="../midterm_solution/practice1/">Solutions</a></span></li>
-<li><span class="wk">Test 2</span><span class="topic">Practice Test 2<span class="sec">7 questions — limits, continuity, Squeeze Theorem, limits at infinity, IVT, second derivative from the definition, tangent line</span></span><span class="link"><a href="../midterm_solution/practice2/">Solutions</a></span></li>
-</ol>
-</section>
 
 <p class="foot">Math 131H discussion section.</p>
 </div>
