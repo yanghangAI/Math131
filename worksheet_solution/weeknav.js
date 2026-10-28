@@ -7,7 +7,8 @@
     {n:4,title:'Continuity, and limits far away'},
     {n:5,title:'The derivative, from the limit definition'},
     {n:6,title:'Derivative shortcuts: power, product and quotient rules'},
-    {n:7,title:'Power, product, quotient and trig derivatives'}
+    {n:7,title:'Power, product, quotient and trig derivatives'},
+    {n:8,title:'Trig derivatives and the chain rule'}
   ];
   const m=location.pathname.match(/week(\d+)\/?(index\.html)?$/);
   const cur=m?+m[1]:null, i=WEEKS.findIndex(w=>w.n===cur);
