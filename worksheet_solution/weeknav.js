@@ -10,7 +10,8 @@
     {n:7,title:'Power, product, quotient and trig derivatives'},
     {n:8,title:'Trig derivatives and the chain rule'},
     {n:9,title:'Implicit differentiation, inverse trig and logarithms'},
-    {n:10,title:'Linear approximation, differentials and hyperbolic functions'}
+    {n:10,title:'Linear approximation, differentials and hyperbolic functions'},
+    {n:11,title:'Chapter 3 review: all the derivative rules in one place'}
   ];
   const m=location.pathname.match(/week(\d+)\/?(index\.html)?$/);
   const cur=m?+m[1]:null, i=WEEKS.findIndex(w=>w.n===cur);
